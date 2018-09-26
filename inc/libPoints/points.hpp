@@ -24,12 +24,12 @@ public:
 	friend std::ostream& operator<< (std::ostream& out, const point& p);
 
     // unary increment/decrement operators (prefix)
-	point& operator-- () const;
-	point& operator++ () const;
+	point& operator-- ();
+	point& operator++ ();
 
     // unary increment/decrement operators (postfix)
-	point operator-- (int) const;
-	point operator++ (int) const;
+	point operator-- (int);
+	point operator++ (int);
 
     // overloaded ostream operator (friend function)
 	friend std::ostream& operator<< (std::ostream& out, const point& p);

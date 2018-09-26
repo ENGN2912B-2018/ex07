@@ -21,28 +21,28 @@ point point::operator+ (const point& p) const{
 	return sum;
 }
 
-point& point::operator-- () const{
+point& point::operator-- (){
 //cout << "--a\n";
     x--;
     y--;
     return *this;
 }
 
-point& point::operator++ () const{
+point& point::operator++ (){
 //cout << "++a\n";
     x++;
     y++;
     return *this;
 }
 
-point point::operator-- (int) const{
+point point::operator-- (int){
 //cout << "a--\n";
     point tmp = *this;
     --*this;
     return tmp;
 }
 
-point point::operator++ (int) const{
+point point::operator++ (int){
 //cout << "a++\n";
     point tmp = *this;
     ++*this;

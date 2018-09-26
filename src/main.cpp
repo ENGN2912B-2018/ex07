@@ -25,7 +25,7 @@ int main()
 	cout << "c = a + b = " << c << endl << endl;
 
     // test increment and decrement operators
-    const point d;
+    point d;
     cout << "d = " << d << endl;
 	cout << "d++ = " << d++ << endl;
 	cout << "++d = " << ++d << endl;
